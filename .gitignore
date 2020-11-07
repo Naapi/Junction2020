@@ -2,6 +2,8 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/master/Unity.gitignore
 #
+/Junction2020game/Temp/
+/Junction2020game/Library/
 /[Ll]ibrary/
 /[Tt]emp/
 /[Oo]bj/
