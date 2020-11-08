@@ -7,6 +7,7 @@ public class Bullet : MonoBehaviour
     private Vector3 direction;
     private float speed = 10f;
     private float gravity = 0.01f;
+    private AudioSource[] audioSource;
 
     public void Setup(Quaternion direction)
     {
@@ -14,6 +15,9 @@ public class Bullet : MonoBehaviour
         // TODO: to be removed when catank model is loaded
         this.direction = Quaternion.AngleAxis(45, Vector3.right) * this.direction;
         Destroy(gameObject, 5f);
+
+        audioSource = GetComponents<AudioSource>();
+        audioSource[0].Play();
     }
 
     void Update()
@@ -29,6 +33,7 @@ public class Bullet : MonoBehaviour
         {
             int score = PlayerPrefs.GetInt("TOTALSCORE");
             PlayerPrefs.SetInt("TOTALSCORE", score + 1);
+            audioSource[1].Play();
         }
     }
 }
