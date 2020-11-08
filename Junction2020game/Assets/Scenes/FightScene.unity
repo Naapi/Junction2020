@@ -576,6 +576,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 1842934271757356828, guid: 6063b2279d47a2440883bf5b89466135, type: 3}
+  scoreManager: {fileID: 0}
 --- !u!114 &1119086257
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1262,6 +1263,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e25a0252561d5437b8c56c08005404aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoreManager: {fileID: 1883628010902396900, guid: 5adad4bfb967f473193d85e34d0e96bb,
+    type: 3}
 --- !u!114 &1796519881
 MonoBehaviour:
   m_ObjectHideFlags: 0
