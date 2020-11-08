@@ -25,5 +25,10 @@ public class Bullet : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         Destroy(gameObject);
+        if (collision.gameObject.name == "Placeholder Enemy")
+        {
+            int score = PlayerPrefs.GetInt("TOTALSCORE");
+            PlayerPrefs.SetInt("TOTALSCORE", score + 1);
+        }
     }
 }
