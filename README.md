@@ -1,2 +1,3 @@
 # Junction2020
-Some cool tanky like game
+
+Catanks! is a battle tank style game spiced with cat robots throwing balls of yarn to each other. Happy music and cute cats, meow!
